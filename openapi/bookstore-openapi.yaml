@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: Users Service API
+  description: RESTful Interface to the Management Services Authorization Service
+  version: "1.0"
+  contact:
+    name: NetApp
+    url: https://www.netapp.com
+  license:
+    name: NetApp Commercial Software License
+    url: https://www.netapp.com
+    
+x-namespace: authz    
+servers:
+  - url: /authz/1
+    
+tags:
+  - name: Service Information
+    description: Information about the service
+  - name: Service Health
+    description: Health check
+  - name: Authorization
+    description: Authorization API 

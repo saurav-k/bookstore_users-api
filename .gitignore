@@ -13,3 +13,7 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+.idea/bookstore_users-api.iml
+.gitignore
+.idea/vcs.xml
+.gitignore
