@@ -6,7 +6,7 @@ import (
 )
 
 func mapUrl() {
-	router.GET("/ping", health.Ping)
+	router.GET("/health", health.Health)
 	// Phase 1 API
 	router.POST("/users", users.CreateUser)
 	router.GET("/users/:user_id", users.GetUser)

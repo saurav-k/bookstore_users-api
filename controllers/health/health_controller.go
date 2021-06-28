@@ -6,7 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Ping(c *gin.Context) {
+func Health(c *gin.Context) {
 	c.String(http.StatusOK, "I am running")
 
 }
