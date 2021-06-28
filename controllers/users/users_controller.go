@@ -32,6 +32,7 @@ func GetUser(c *gin.Context) {
 	if userError != nil {
 		err := errors.NewBadrequest("Invalid user id")
 		c.JSON(int(err.Status), err)
+		return
 	}
 
 	user, getErr := services.GetUser(userId)
