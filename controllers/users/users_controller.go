@@ -10,7 +10,6 @@ import (
 	"github.com/saurav-k/bookstore_users-api/utils/errors"
 )
 
-// Will be defined in Phase 1
 func CreateUser(c *gin.Context) {
 	var user users.User
 	if err := c.ShouldBindJSON(&user); err != nil {
